@@ -7,13 +7,21 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageOutputPath>D:\source\Nuget</PackageOutputPath>
     <VersionPrefix>1.0.0</VersionPrefix>
-    <VersionSuffix>alpha-1.1.0</VersionSuffix>
+    <VersionSuffix>alpha-1.2.1</VersionSuffix>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Gay.TCazier.pkg.BeaniesUtilities.Models" Version="1.0.0-alpha-1.3.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Models\Models\Models.csproj" />
+    <None Update="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
@@ -30,5 +38,13 @@
   </PropertyGroup>
   <PropertyGroup>
     <OutputType>Library</OutputType>
+    <PackageId>Gay.TCazier.pkg.BeaniesUtilities.$(AssemblyName)</PackageId>
+    <Title>Base Model SQL Data Operations and Utilities</Title>
+    <PackageProjectUrl>tcazier.gay</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <AssemblyVersion>$(VersionPrefix).0</AssemblyVersion>
+    <FileVersion>$(VersionPrefix).0</FileVersion>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 </Project>
