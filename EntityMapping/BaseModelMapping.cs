@@ -32,16 +32,6 @@ namespace BeaniesUtilities.SQLDataOperations.EntityMapping
                 .HasColumnOrder(3)
                 .IsRequired();
 
-            //builder.Property(x => x.CreatedBy)
-            //    .HasColumnType("nvarchar")
-            //    .HasMaxLength(512)
-            //    .IsRequired();
-
-            //builder.Property(x => x.CreatedOn)
-            //    .HasColumnType("char(8)")
-            //    .HasConversion(new DateTimeToChar8Converter())
-            //    .IsRequired();
-
             builder.Property(x => x.ModifiedBy)
                 .HasColumnType("nvarchar")
                 .HasMaxLength(512);
