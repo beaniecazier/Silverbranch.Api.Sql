@@ -1,1 +1,1 @@
-Yes I dont having any contents now fuck off VS
+Backing code to unify sql database operations and code to Base Model and Project Template Builder Tool
