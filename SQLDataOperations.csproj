@@ -5,12 +5,12 @@
     <Nullable>enable</Nullable>
     <RootNamespace>BeaniesUtilities.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageOutputPath>D:\source\Nuget</PackageOutputPath>
     <VersionPrefix>1.0.0</VersionPrefix>
-    <VersionSuffix>alpha-1.2.2</VersionSuffix>
+    <VersionSuffix>alpha-1.3.0</VersionSuffix>
+    <PackageIcon>1738852015508output.png</PackageIcon>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Gay.TCazier.pkg.BeaniesUtilities.Models" Version="1.0.0-alpha-1.4.1" />
+    <PackageReference Include="Gay.TCazier.pkg.BeaniesUtilities.Models" Version="1.0.0-alpha-1.5.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
   </ItemGroup>
   <ItemGroup>
@@ -21,6 +21,10 @@
     <None Update="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
+    </None>
+    <None Update="1738852015508output.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
     </None>
   </ItemGroup>
   <PropertyGroup>
