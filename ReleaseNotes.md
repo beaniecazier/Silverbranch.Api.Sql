@@ -1,4 +1,16 @@
-﻿# VERSION 1.0.0-alpha-1.3.0
+﻿# VERSION 1.0.0
+Initial full release of library
+
+# VERSION 1.0.0-rc-1
+Skipped straight to release 1.0.0
+
+# VERSION 1.0.0-beta-1
+Skipped straight to release 1.0.0
+
+# VERSION 1.0.0-alpha.beta
+Skipped straight to release 1.0.0
+
+# VERSION 1.0.0-alpha-1.3.0
 Add git action CICD pipeline to make and publish nuget package
 Update Base Model mappings
 Add some value converters
