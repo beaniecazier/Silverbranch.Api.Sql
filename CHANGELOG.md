@@ -7,7 +7,7 @@ VERSION 1.1.0-alpha
 --------------------------------------------------------------------------------
 ---
 ### 2025/07/02
-- Changelog here
+- Changed project structure to Silverbranch Codeworks standard
 
 ---
 VERSION 1.0.0
