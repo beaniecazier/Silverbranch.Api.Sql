@@ -1,12 +1,12 @@
-using BeaniesUtilities.Models.CommonModels;
+using Gay.Silverbranch.API.Models.CommonModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BeaniesUtilities.SQLDataOperations.EntityMapping;
+namespace Gay.Silverbranch.API.SQL.EntityMapping.CommonModels;
 
-public class CountryCodeModelMapping : BaseModelMapping<CountryCodeModel>
+public class CountryCodeModelEntityMapping : BaseModelMapping<CountryCodeModel>
 {
-    public new const string TABLENAME = "CountryCodes";
+    public new const string TableName = "CountryCodes";
 
     /// <summary>
     /// 
@@ -15,7 +15,7 @@ public class CountryCodeModelMapping : BaseModelMapping<CountryCodeModel>
     // https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver16
     public override void Configure(EntityTypeBuilder<CountryCodeModel> builder)
     {
-        builder.ToTable(TABLENAME)
+        builder.ToTable(TableName)
             .HasKey(x => x.EntryIdentity);
 
         builder.Property(x => x.Country)

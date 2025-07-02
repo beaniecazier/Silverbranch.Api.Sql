@@ -1,12 +1,12 @@
-using BeaniesUtilities.Models.CommonModels;
+using Gay.Silverbranch.API.Models.CommonModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BeaniesUtilities.SQLDataOperations.EntityMapping;
+namespace Gay.Silverbranch.API.SQL.EntityMapping.CommonModels;
 
-public class OrganizationModelMapping : BaseModelMapping<OrganizationModel>
+public class OrganizationModelEntityMapping : BaseModelMapping<OrganizationModel>
 {
-    public new const string TABLENAME = "Organizations";
+    public new const string TableName = "Organizations";
 
     /// <summary>
     /// 

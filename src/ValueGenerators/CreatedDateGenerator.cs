@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.ValueGeneration;
 
-namespace BeaniesUtilities.SQLDataOperations;
+namespace Gay.Silverbranch.API.SQL.ValueGenerators;
 
 public class CreatedDateGenerator : ValueGenerator<DateTime>
 {
