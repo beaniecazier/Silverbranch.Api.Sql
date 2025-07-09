@@ -65,7 +65,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Gay.Silverbranch.pkg.Api.Models" Version="1.1.0-alpha-20250706-014652" />
+    <PackageReference Include="Gay.Silverbranch.pkg.Api.Models" Version="1.1.0-alpha-20250709-223952" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
   </ItemGroup>
   
