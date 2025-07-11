@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Gay.Silverbranch.API.SQL.ValueConverters;
 
-public class ListPropModifierToStringConverter :  ValueConverter<List<ePropertyModifier>, string>
+public class ListePropertyModifierToStringConverter :  ValueConverter<List<ePropertyModifier>, string>
 {
-    public ListPropModifierToStringConverter() :
+    public ListePropertyModifierToStringConverter() :
         base(list => ListToString(list),
         str => StringToList(str))
     {
