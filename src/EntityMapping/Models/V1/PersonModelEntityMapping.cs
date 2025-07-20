@@ -1,10 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Gay.Silverbranch.API.Models.Entities.V1;
+using Gay.Silverbranch.API.SQL.ValueConverters;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-using Gay.Silverbranch.API.Models.CommonModels;
-using Gay.Silverbranch.API.SQL.ValueConverters;
-
-namespace Gay.Silverbranch.API.SQL.EntityMapping.CommonModels;
+namespace Gay.Silverbranch.Api.SQL.EntityMapping.Models.V1;
 
 public class PersonModelEntityMapping : BaseModelMapping<PersonModel>
 {

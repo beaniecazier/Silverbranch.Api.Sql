@@ -1,8 +1,8 @@
-using Gay.Silverbranch.API.Models.CommonModels;
+using Gay.Silverbranch.API.Models.Entities.V1;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Gay.Silverbranch.API.SQL.EntityMapping.CommonModels;
+namespace Gay.Silverbranch.Api.SQL.EntityMapping.Models.V1;
 
 public class OrganizationModelEntityMapping : BaseModelMapping<OrganizationModel>
 {

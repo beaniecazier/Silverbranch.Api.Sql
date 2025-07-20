@@ -1,9 +1,8 @@
-﻿using Gay.Silverbranch.API.Models;
-using Gay.Silverbranch.API.SQL.ValueConverters;
+﻿using Gay.Silverbranch.API.Models.Entities.V1;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Gay.Silverbranch.API.SQL.EntityMapping
+namespace Gay.Silverbranch.Api.SQL.EntityMapping.Models.V1
 {
     public abstract class BaseModelMapping<T> : IEntityTypeConfiguration<T>
     where T : BaseModel
