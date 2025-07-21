@@ -2,7 +2,7 @@
 
 using Gay.Silverbranch.API.Models.Enum.V1;
 
-namespace Gay.Silverbranch.API.SQL.ValueConverters;
+namespace Gay.Silverbranch.Api.Sql.ValueConverters;
 
 public class ListPronounToIntArrayConverter : ValueConverter<List<ePronoun>, IEnumerable<int>>
 {

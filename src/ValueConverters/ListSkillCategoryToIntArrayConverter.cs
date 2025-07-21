@@ -2,7 +2,7 @@
 
 using Gay.Silverbranch.API.Models.Enum.V1;
 
-namespace Gay.Silverbranch.API.SQL.ValueConverters;
+namespace Gay.Silverbranch.Api.Sql.ValueConverters;
 
 public class ListSkillCategoryToIntArrayConverter : ValueConverter<List<eSkillCategory>, IEnumerable<int>>
 {

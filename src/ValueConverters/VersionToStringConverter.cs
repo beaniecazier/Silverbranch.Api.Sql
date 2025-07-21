@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 using Version = Gay.Silverbranch.Utilities.General.Version;
 
-namespace Gay.Silverbranch.API.SQL.ValueConverters;
+namespace Gay.Silverbranch.Api.Sql.ValueConverters;
 
 public class VersionToStringConverter : ValueConverter<Version, string>
 {

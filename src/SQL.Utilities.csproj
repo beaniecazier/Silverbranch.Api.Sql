@@ -13,7 +13,7 @@
     <Authors>Tiabeanie Cazier</Authors>
     <Product>$(Company) API SQL Utilities</Product>
     <Title>Base Model SQL Data Operations and Utilities</Title>
-    <AssemblyName>Api.SQL</AssemblyName>
+    <AssemblyName>Api.Sql</AssemblyName>
     <RootNamespace>Gay.Silverbranch.$(AssemblyName)</RootNamespace>
     <PackageId>Gay.Silverbranch.pkg.$(AssemblyName)</PackageId>
     <VersionPrefix>1.0.0</VersionPrefix>
@@ -65,7 +65,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Gay.Silverbranch.pkg.Api.Models" Version="1.1.0-alpha-20250721-042431" />
+    <PackageReference Include="Gay.Silverbranch.pkg.Api.Models" Version="1.1.0-alpha-20250721-160819" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
   </ItemGroup>
   

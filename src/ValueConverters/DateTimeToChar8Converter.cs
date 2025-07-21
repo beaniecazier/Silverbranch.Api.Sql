@@ -1,7 +1,7 @@
 using System.Globalization;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace Gay.Silverbranch.API.SQL.ValueConverters;
+namespace Gay.Silverbranch.Api.Sql.ValueConverters;
 
 public class DateTimeToChar8Converter : ValueConverter<DateTime, string>
 {
