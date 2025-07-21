@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-using Gay.Silverbranch.API.Models.Enum.V1;
+using Gay.Silverbranch.Api.Models.Enum.V1;
 
 namespace Gay.Silverbranch.Api.Sql.ValueConverters;
 
