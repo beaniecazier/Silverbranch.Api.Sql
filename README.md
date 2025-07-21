@@ -1,9 +1,11 @@
-![Silverbranch Codeworks Banner](https://gitlab.com/silverbranch-utilities/assets/-/raw/trunk/banner-pride.png)
+~~![Silverbranch Codeworks Banner](https://gitlab.com/silverbranch-utilities/assets/-/raw/trunk/banner-pride.png)
 
-# 📦 [SILVERBRANCH CODEWORKS Base Model SQL Data Operations and Utilities]
-![GitHub License](https://img.shields.io/github/license/beaniecazier/Silverbranch.Api.Sql)
+# 📦 SILVERBRANCH CODEWORKS Base Model SQL Data Operations and Utilities
+![GitHub License](https://img.shields.io/github/license/beaniecazier/Silverbranch.Api.Sql)~~
 
 Backing code to unify sql database operations and code to Base Model and Project Template Builder Tool
+
+> This package is built for [.NET version(s)] and supports [platforms, if applicable].
 
 ## Project status
 This is currently in an unreleased alpha state while I get everything ready for the first two major projects to be pushed
