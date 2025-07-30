@@ -51,7 +51,7 @@ deploy:
     - PACKAGE_PATH=$(find . -type f -name "*Gay.Silverbranch.pkg.Api.Sql*.nuget"| head -n 1)
     - echo "Pushing $PACKAGE_PATH"
     - |
-      dotnet nuget push $PACKAGE_PATH \
+      dotnet nuget push "$PACKAGE_PATH" \
       --source gitlab
     - dotnet nuget remove source GroupPackagesSilverbranchUtilities
   rules:
