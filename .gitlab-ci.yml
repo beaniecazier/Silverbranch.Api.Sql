@@ -48,8 +48,10 @@ deploy:
       --username gitlab-ci-token \
       --password $CI_JOB_TOKEN \
       --store-password-in-clear-text
+    - PACKAGE_PATH=$(find . -type f -name "*Gay.Silverbranch.pkg.Api.Sql*.nuget"| head -n 1)
+    - echo "Pushing $PACKAGE_PATH"
     - |
-      dotnet nuget push "/builds/silverbranch-utilities/api/sql/src/bin/Release/*.nupkg" \
+      dotnet nuget push $PACKAGE_PATH \
       --source gitlab
     - dotnet nuget remove source GroupPackagesSilverbranchUtilities
   rules:
