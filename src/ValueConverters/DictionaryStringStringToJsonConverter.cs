@@ -22,6 +22,9 @@ public class DictionaryStringStringToJsonConverter: ValueConverter<Dictionary<st
 
     private static string SerializeDictionary(
         Dictionary<string, string> dict,
-        JsonSerializerOptions? options = null) =>
-    dict.IsNullOrEmpty() ? string.Empty : JsonSerializer.Serialize(dict);
+        JsonSerializerOptions? options = null)
+    {
+        if (dict == null) return string.Empty;
+        return dict.Count == 0 ? string.Empty : JsonSerializer.Serialize(dict, options);
+    }
 }
