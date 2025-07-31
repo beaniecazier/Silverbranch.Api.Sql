@@ -1,13 +1,13 @@
-﻿using BeaniesUtilities.Models.CommonModels;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using Gay.Silverbranch.Api.Models.Entities.V1;
+using Gay.Silverbranch.Api.Sql.ValueConverters;
 using Microsoft.EntityFrameworkCore;
-using BeaniesUtilities.SQLDataOperations.ValueConverters;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BeaniesUtilities.SQLDataOperations.EntityMapping;
+namespace Gay.Silverbranch.Api.Sql.EntityMapping.Models.V1;
 
-public class PersonModelMapping : BaseModelMapping<PersonModel>
+public class PersonModelEntityMapping : BaseModelMapping<PersonModel>
 {
-    public new const string TABLENAME = "Person";
+    public new const string TableName = "Person";
 
     /// <summary>
     /// 

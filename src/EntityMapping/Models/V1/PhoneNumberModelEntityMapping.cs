@@ -1,12 +1,12 @@
-﻿using BeaniesUtilities.Models.CommonModels;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using Gay.Silverbranch.Api.Models.Entities.V1;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BeaniesUtilities.SQLDataOperations.EntityMapping;
+namespace Gay.Silverbranch.Api.Sql.EntityMapping.Models.V1;
 
-public class PhoneNumberModelMapping : BaseModelMapping<PhoneNumberModel>
+public class PhoneNumberModelEntityMapping : BaseModelMapping<PhoneNumberModel>
 {
-    public new const string TABLENAME = "PhoneNumbers";
+    public new const string TableName = "PhoneNumbers";
 
     /// <summary>
     /// 
@@ -15,7 +15,7 @@ public class PhoneNumberModelMapping : BaseModelMapping<PhoneNumberModel>
     // https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver16
     public override void Configure(EntityTypeBuilder<PhoneNumberModel> builder)
     {
-        builder.ToTable(TABLENAME)
+        builder.ToTable(TableName)
             .HasKey(x => x.EntryIdentity);
         
         builder.Property(x => x.PhoneType)

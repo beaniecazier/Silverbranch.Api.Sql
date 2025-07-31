@@ -1,14 +1,13 @@
-﻿using BeaniesUtilities.Models;
-using BeaniesUtilities.SQLDataOperations.ValueConverters;
+﻿using Gay.Silverbranch.Api.Models.Entities.V1;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BeaniesUtilities.SQLDataOperations.EntityMapping
+namespace Gay.Silverbranch.Api.Sql.EntityMapping.Models.V1
 {
     public abstract class BaseModelMapping<T> : IEntityTypeConfiguration<T>
-        where T : BaseModel
+    where T : BaseModel
     {
-        public const string TABLENAME = "BASEMODELTABLE - DO NOT USE";
+        public const string TableName = "BASEMODELTABLE - DO NOT USE";
 
         /// <summary>
         /// 
@@ -22,23 +21,26 @@ namespace BeaniesUtilities.SQLDataOperations.EntityMapping
                 .HasColumnName("Id");
 
             builder.Property(x => x.CommonIdentity)
-                .HasColumnType("int")
+                .HasColumnType("varchar")
+                .HasMaxLength(13)
                 .HasColumnOrder(2)
                 .IsRequired();
 
             builder.Property(x => x.Name)
                 .HasColumnType("nvarchar")
-                .HasMaxLength(512)
+                .HasMaxLength(128)
                 .HasColumnOrder(3)
                 .IsRequired();
 
             builder.Property(x => x.ModifiedBy)
                 .HasColumnType("nvarchar")
-                .HasMaxLength(512);
+                .HasMaxLength(64);
 
+            // builder.Property(x => x.ModifiedOn)
+            //     .HasColumnType("char(22)")
+            //     .HasConversion(new DateTimeToChar22Converter());
             builder.Property(x => x.ModifiedOn)
-                .HasColumnType("char(22)")
-                .HasConversion(new DateTimeToChar22Converter());
+                .HasColumnType("datetime2");
 
             builder.Property(x => x.IsHidden)
                 .HasColumnType("bit")
@@ -46,11 +48,13 @@ namespace BeaniesUtilities.SQLDataOperations.EntityMapping
 
             builder.Property(x => x.HiddenBy)
                 .HasColumnType("nvarchar")
-                .HasMaxLength(512);
+                .HasMaxLength(64);
 
+            // builder.Property(x => x.HiddenOn)
+            //     .HasColumnType("char(22)")
+            //     .HasConversion(new DateTimeToChar22Converter());
             builder.Property(x => x.HiddenOn)
-                .HasColumnType("char(22)")
-                .HasConversion(new DateTimeToChar22Converter());
+                .HasColumnType("datetime2");
 
             builder.Property(x => x.IsDeleted)
                 .HasColumnType("bit")
@@ -58,11 +62,13 @@ namespace BeaniesUtilities.SQLDataOperations.EntityMapping
 
             builder.Property(x => x.DeletedBy)
                 .HasColumnType("nvarchar")
-                .HasMaxLength(512);
+                .HasMaxLength(64);
 
+            // builder.Property(x => x.DeletedOn)
+            //     .HasColumnType("char(22)")
+            //     .HasConversion(new DateTimeToChar22Converter());
             builder.Property(x => x.DeletedOn)
-                .HasColumnType("char(22)")
-                .HasConversion(new DateTimeToChar22Converter());
+                .HasColumnType("datetime2");
 
             builder.Property(x => x.Notes)
                 .HasColumnType("ntext")

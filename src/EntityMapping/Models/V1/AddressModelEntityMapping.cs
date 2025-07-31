@@ -1,13 +1,12 @@
-﻿using BeaniesUtilities.Models.CommonModels;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using Gay.Silverbranch.Api.Models.Entities.V1;
 using Microsoft.EntityFrameworkCore;
-using BeaniesUtilities.SQLDataOperations.EntityMapping;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BeaniesUtilities.SQLDataOperations.Resume.SQL.EntityMapping;
+namespace Gay.Silverbranch.Api.Sql.EntityMapping.Models.V1;
 
-public class AddressModelMapping : BaseModelMapping<AddressModel>
+public class AddressModelEntityMapping : BaseModelMapping<AddressModel>
 {
-    public new const string TABLENAME = "Address";
+    public new const string TableName = "Address";
 
     /// <summary>
     /// 
@@ -16,7 +15,7 @@ public class AddressModelMapping : BaseModelMapping<AddressModel>
     // https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver16
     public override void Configure(EntityTypeBuilder<AddressModel> builder)
     {
-        builder.ToTable(TABLENAME)
+        builder.ToTable(TableName)
             .HasKey(x => x.EntryIdentity);
 
         builder.Property(x => x.CrossStreetName)

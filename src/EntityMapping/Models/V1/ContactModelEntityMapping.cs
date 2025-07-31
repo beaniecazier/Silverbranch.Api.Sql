@@ -1,12 +1,12 @@
-using BeaniesUtilities.Models.CommonModels;
+using Gay.Silverbranch.Api.Models.Entities.V1;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BeaniesUtilities.SQLDataOperations.EntityMapping;
+namespace Gay.Silverbranch.Api.Sql.EntityMapping.Models.V1;
 
-public class ContactModelMapping : BaseModelMapping<ContactModel>
+public class ContactModelEntityMapping : BaseModelMapping<ContactModel>
 {
-    public new const string TABLENAME = "ContactInfo";
+    public new const string TableName = "ContactInfo";
 
     /// <summary>
     /// 
@@ -15,7 +15,7 @@ public class ContactModelMapping : BaseModelMapping<ContactModel>
     // https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver16
     public override void Configure(EntityTypeBuilder<ContactModel> builder)
     {
-        builder.ToTable(TABLENAME)
+        builder.ToTable(TableName)
             .HasKey(x => x.EntryIdentity);
 
         builder.Property(x => x.Emails);

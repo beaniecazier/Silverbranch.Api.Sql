@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace BeaniesUtilities.SQLDataOperations.ValueConverters;
+namespace Gay.Silverbranch.Api.Sql.ValueConverters;
 
 public class DateTimeToChar22Converter : ValueConverter<DateTime, string>
 {
