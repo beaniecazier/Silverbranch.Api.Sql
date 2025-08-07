@@ -4,9 +4,9 @@ using Gay.Silverbranch.Api.Models.Enum.V1;
 
 namespace Gay.Silverbranch.Api.Sql.ValueConverters;
 
-public class ListePropertyModifierToStringConverter :  ValueConverter<List<ePropertyModifier>, string>
+public class ListEPropertyModifierToStringConverter :  ValueConverter<List<ePropertyModifier>, string>
 {
-    public ListePropertyModifierToStringConverter() :
+    public ListEPropertyModifierToStringConverter() :
         base(list => ListToString(list),
         str => StringToList(str))
     {
@@ -28,9 +28,8 @@ public class ListePropertyModifierToStringConverter :  ValueConverter<List<eProp
         return results;
     }
 
-    private static string ListToString(List<ePropertyModifier> values)
-    {
-        if (values.Count == 0) return ePropertyModifier.None.ToString();
-        return string.Join(",", values.Select(c => c.ToString()));
-    }
+    private static string ListToString(List<ePropertyModifier> values) =>
+        values.Count == 0 ?
+            ePropertyModifier.None.ToString() :
+            string.Join(",", values.Select(c => c.ToString()));
 }
