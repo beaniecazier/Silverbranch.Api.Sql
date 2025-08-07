@@ -24,7 +24,7 @@ public class PersonModelEntityMapping : BaseModelMapping<PersonModel>
             .HasMaxLength(512);
 
         builder.Property(x => x.Pronouns)
-            .HasConversion(new ListPronounToIntArrayConverter());
+            .HasConversion(new ListEPronounToIntArrayConverter());
         
         builder.Property(x => x.Website)
             .HasColumnType("ntext")
