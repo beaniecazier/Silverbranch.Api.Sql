@@ -20,7 +20,7 @@ namespace Gay.Silverbranch.Api.Sql.EntityMapping.Models.V1
                 .HasColumnOrder(1)
                 .HasColumnName("Id");
 
-            builder.Property(x => x.CommonIdentity)
+            builder.Property(x => x.ReferenceIdentity)
                 .HasColumnType("varchar")
                 .HasMaxLength(13)
                 .HasColumnOrder(2)
