@@ -21,7 +21,7 @@ deploy:
     - |
       dotnet nuget add \
       source "${CI_API_V4_URL}/groups/$NUGET_GROUP_ID_SILVERBRANCH/-/packages/nuget/index.json" \
-      --name GroupPackagesSilverbranchUtilities \
+      --name GroupPackagesSilverbranch \
       --username $NUGET_PULL_USER \
       --password $NUGET_AUTH_TOKEN \
       --store-password-in-clear-text
